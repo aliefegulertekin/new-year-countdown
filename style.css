@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  min-height: 100vh;
+  position: relative;
+  font-family: 'Mountains of Christmas', cursive;
+}
+
+img {
+  position: absolute;
+  width: 100%;
+
+}
+
+.christmas-img {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+.countdown {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-20%);
+
+  width: 45rem;
+  height: 20rem;
+  font-weight: bolder;
+}
+
+.countdown-info {
+  position: relative;
+  font-size: 1.7rem;
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+.he {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: white;
+  background: linear-gradient(to right bottom, rgba(255,255,255, 0.7), rgba(255, 255, 255,0.3));
+  filter: blur(10px);
+  width: 100%;
+  z-index: 0;
+
+  height: 100%;
+}
+
+.countdown-info-element {
+  position: relative;
+display: flex;
+flex-direction: column;
+}
+
+.time {
+  position: absolute;
+  left: 50%;
+  top: 120%;
+  transform: translateX(-50%);
+}
+
+section {
+
+}
