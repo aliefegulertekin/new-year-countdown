@@ -1,13 +1,13 @@
 const cDate = new Date('Jan 1, 2022 00:00:00').getTime();
 
 
-const newYear = () => {
+const timeGapToNewYear = () => {
+
   const now = new Date().getTime();
   const gap = cDate - now;
   
   timeCalculation(gap);
-
-}
+};
 
 
 const timeCalculation = (gap) => {
@@ -25,8 +25,10 @@ const timeCalculation = (gap) => {
   const dayValue = Math.floor((gap % week) / day);
   const weekValue = Math.floor((gap % month) / week);
   const monthValue = Math.floor((gap % year) / month);
+
   renderTimeToScreen(monthValue, weekValue, dayValue, hourValue, minuteValue, secondValue);
-}
+};
+
 
 const renderTimeToScreen = (monthValue, weekValue, dayValue, hourValue, minuteValue, secondValue) => {
   document.getElementById('month').innerText = monthValue;
@@ -39,5 +41,5 @@ const renderTimeToScreen = (monthValue, weekValue, dayValue, hourValue, minuteVa
 
 
 setInterval(function() {
-  newYear();
+  timeGapToNewYear();
 },1000);
